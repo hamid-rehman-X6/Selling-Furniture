@@ -23,6 +23,10 @@ app.use(
 // use the user router here
 app.use(userRoutes);
 
+app.get("/", (req,res) => {
+    res.json("Hello World")
+});
+
 app.use(handleError);
 
 const PORT = process.env.PORT || 8000;
