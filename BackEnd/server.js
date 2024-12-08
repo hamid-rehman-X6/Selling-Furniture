@@ -21,7 +21,7 @@ app.use(
 );
 
 // use the user router here
-app.use('/auth/users', userRoutes);
+app.use('auth/users', userRoutes);
 
 app.use(handleError);
 
