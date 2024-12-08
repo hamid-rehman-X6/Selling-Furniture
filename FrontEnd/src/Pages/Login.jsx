@@ -33,6 +33,9 @@ const AuthModal = ({ onClose }) => {
           {
             email: formData?.email,
             password: formData?.password,
+          },
+          {
+            withCredentials: true,
           }
         );
         setMessage({
@@ -57,6 +60,9 @@ const AuthModal = ({ onClose }) => {
             lastName: formData?.lastName,
             password: formData?.password,
             confirmPassword: formData?.confirmPassword,
+          },
+          {
+            withCredentials: true,
           }
         );
         setMessage({
