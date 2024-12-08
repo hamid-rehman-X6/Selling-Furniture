@@ -3,8 +3,6 @@ import { X, User, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const BASE_API_URL = "http://localhost:8080/auth";
-
 const AuthModal = ({ onClose }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -30,10 +28,13 @@ const AuthModal = ({ onClose }) => {
     try {
       if (isLogin) {
         // Login API call
-        const response = await axios.post(`${BASE_API_URL}/users/login`, {
-          email: formData.email,
-          password: formData.password,
-        });
+        const response = await axios.post(
+          `${VITE_REACT_APP_BACKEND_BASEURL}/auth/users/login`,
+          {
+            email: formData.email,
+            password: formData.password,
+          }
+        );
         setMessage({
           text: response.data.message,
           status: response.data.success ? "success" : "error",
@@ -48,13 +49,16 @@ const AuthModal = ({ onClose }) => {
         }
       } else {
         // Signup API call
-        const response = await axios.post(`${BASE_API_URL}/users/signup`, {
-          email: formData.email,
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          password: formData.password,
-          confirmPassword: formData.confirmPassword,
-        });
+        const response = await axios.post(
+          `${VITE_REACT_APP_BACKEND_BASEURL}/auth/users/signup`,
+          {
+            email: formData.email,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            password: formData.password,
+            confirmPassword: formData.confirmPassword,
+          }
+        );
         setMessage({
           text: response.data.message,
           status: response.data.success ? "success" : "error",
