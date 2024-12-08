@@ -29,17 +29,17 @@ const AuthModal = ({ onClose }) => {
       if (isLogin) {
         // Login API call
         const response = await axios.post(
-          `${VITE_REACT_APP_BACKEND_BASEURL}/auth/users/login`,
+          `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/auth/users/login`,
           {
-            email: formData.email,
-            password: formData.password,
+            email: formData?.email,
+            password: formData?.password,
           }
         );
         setMessage({
-          text: response.data.message,
-          status: response.data.success ? "success" : "error",
+          text: response?.data?.message,
+          status: response?.data?.success ? "success" : "error",
         });
-        if (response.data.success) {
+        if (response?.data?.success) {
           const tokenID = response?.data?.tokenId;
           localStorage.setItem("accessToken", tokenID);
 
@@ -50,20 +50,20 @@ const AuthModal = ({ onClose }) => {
       } else {
         // Signup API call
         const response = await axios.post(
-          `${VITE_REACT_APP_BACKEND_BASEURL}/auth/users/signup`,
+          `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/auth/users/signup`,
           {
-            email: formData.email,
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            password: formData.password,
-            confirmPassword: formData.confirmPassword,
+            email: formData?.email,
+            firstName: formData?.firstName,
+            lastName: formData?.lastName,
+            password: formData?.password,
+            confirmPassword: formData?.confirmPassword,
           }
         );
         setMessage({
-          text: response.data.message,
-          status: response.data.success ? "success" : "error",
+          text: response?.data?.message,
+          status: response?.data?.success ? "success" : "error",
         });
-        if (response.data.success === true) {
+        if (response?.data?.success === true) {
           setFormData({
             email: "",
             firstName: "",
@@ -82,7 +82,7 @@ const AuthModal = ({ onClose }) => {
         }, 3000);
       }
     } catch (error) {
-      setMessage(error.response?.data?.message || "An error occurred");
+      setMessage(error?.response?.data?.message || "An error occurred");
 
       // Clear error message after 3 seconds
       setTimeout(() => {
