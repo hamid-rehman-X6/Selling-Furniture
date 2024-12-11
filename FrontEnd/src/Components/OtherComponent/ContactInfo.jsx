@@ -19,10 +19,10 @@ const ContactInfo = () => {
         </ContactInfoItem>
 
         <ContactInfoItem icon={Phone} title="CALL US NOW">
-          <p className="font-montserrat mt-4">+971 55 734 9696</p>
-          <p className="font-montserrat mt-1">+971 55 734 9696</p>
+          <p className="font-montserrat mt-4">+971 55 696 1430</p>
+          <p className="font-montserrat mt-1">+971 55 696 1430</p>
           <p className="font-bold mt-2 font-montserrat">Office</p>
-          <p className="font-montserrat mt-2">043373446</p>
+          <p className="font-montserrat mt-2">971556961430</p>
         </ContactInfoItem>
 
         <ContactInfoItem icon={MapPin} title="ADDRESS">
@@ -35,8 +35,8 @@ const ContactInfo = () => {
         </ContactInfoItem>
 
         <ContactInfoItem icon={Mail} title="EMAIL US">
-          <p className="font-montserrat mt-4">info@designcraft.ae</p>
-          <p className="font-montserrat mt-2">sales@designcraft.ae</p>
+          <p className="font-montserrat mt-4">Sweetbrotherjarwar@gmail.com</p>
+          <p className="font-montserrat mt-2">Sweetbrotherjarwar@gmail.com</p>
         </ContactInfoItem>
       </div>
     </div>

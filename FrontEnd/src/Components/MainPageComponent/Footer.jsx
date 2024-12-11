@@ -55,23 +55,23 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4 uppercase">Call Us:</h3>
               <p className="mb-2 hover:text-[#FF9149] transition-colors duration-300 cursor-pointer">
-                Ph: 04 337 34 46
+                Ph: 971556961430
               </p>
               <p className="mb-2 hover:text-[#FF9149] transition-colors duration-300 cursor-pointer">
-                T: +971 55 734 9696
+                T: +971 55 696 1430
               </p>
               <p className="hover:text-[#FF9149] transition-colors duration-300 cursor-pointer">
-                T: +971 55 734 9696
+                T: +971 55 696 1430
               </p>
               <h3 className="font-bold mt-4 mb-4 uppercase">Email:</h3>
               <Link to="mailto:info@designcraft.ae">
-                <p className="mb-2 cursor-pointer hover:text-[#FF9149] transition-colors duration-300">
-                  info@designcraft.ae
+                <p className="mb-2 cursor-pointer hover:text-[#FF9149] text-sm transition-colors duration-300">
+                  Sweetbrotherjarwar@gmail.com
                 </p>
               </Link>
               <Link to="mailto:sales@designcraft.ae">
-                <p className="hover:text-[#FF9149] transition-colors duration-300 cursor-pointer">
-                  sales@designcraft.ae
+                <p className="hover:text-[#FF9149] transition-colors text-sm duration-300 cursor-pointer">
+                  Sweetbrotherjarwar@gmail.com
                 </p>
               </Link>
             </div>

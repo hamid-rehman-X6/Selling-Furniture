@@ -10,7 +10,7 @@ const ContactButtons = () => {
       <div className="flex flex-col space-y-[2px]">
         {/* Phone Button */}
         <a
-          href="tel:+971504595483"
+          href="tel:+971 55 696 1430"
           className="bg-[#128BE0] p-3 md:p-4 transition-all duration-300 ease-in-out flex items-center justify-center group relative"
           aria-label="Call us"
         >
@@ -22,7 +22,7 @@ const ContactButtons = () => {
 
         {/* Email Button */}
         <a
-          href="mailto:sales@designcraft.ae"
+          href="mailto:Sweetbrotherjarwar@gmail.com"
           className="bg-[#CC1010] p-3 md:p-4 transition-all duration-300 ease-in-out flex items-center justify-center group relative"
           aria-label="Email us"
         >

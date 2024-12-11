@@ -39,31 +39,31 @@ export default function Navbar() {
           <div className="flex gap-6">
             <Link
               to="mailto:sales@designcraft.ae"
-              className="flex items-center text-black font-medium text-lg hover:text-[#FF9149] transition-colors duration-300"
+              className="flex items-center text-black font-medium text-md hover:text-[#FF9149] transition-colors duration-300"
             >
               <Mail className="h-6 w-6 mr-1 transition-transform duration-300 hover:scale-110" />
-              sales@designcraft.ae
+              Sweetbrotherjarwar@gmail.com
             </Link>
             <Link
-              to="tel:043373446"
-              className="flex items-center text-black font-medium text-lg hover:text-[#FF9149] transition-colors duration-300"
+              to="tel:971 55 696 1430"
+              className="flex items-center text-black font-medium text-md hover:text-[#FF9149] transition-colors duration-300"
             >
               <Phone className="h-6 w-6 mr-1 transition-transform duration-300 hover:scale-110" />
-              0433 734 46
+              971 55 696 1430
             </Link>
             <Link
               to="tel:+971557349696"
-              className="flex items-center text-black font-medium text-lg hover:text-[#FF9149] transition-colors duration-300"
+              className="flex items-center text-black font-medium text-md hover:text-[#FF9149] transition-colors duration-300"
             >
               <Smartphone className="h-6 w-6 mr-1 transition-transform duration-300 hover:scale-110" />
-              +971 55 734 9696
+              +971 55 696 1430
             </Link>
           </div>
 
           {/* Social Links */}
           <div className="flex gap-2 mt-2">
             <Link
-              to="https://www.facebook.com/people/Designcraftae/61551538633956/?mibextid=ZbWKwL"
+              to="https://www.facebook.com/share/15UPTsLFuJ/?mibextid=JRoKGi"
               className="bg-[#7A7A7A] rounded-full flex items-center justify-center p-[6px] hover:bg-[#FF9149] transition-all duration-300"
             >
               <FontAwesomeIcon
@@ -73,7 +73,7 @@ export default function Navbar() {
               />
             </Link>
             <Link
-              to="https://www.instagram.com/design_craft_official?igshid=MzRlODBiNWFlZA%3D%3D"
+              to="https://www.instagram.com"
               className="bg-[#7A7A7A] rounded-full flex items-center justify-center p-[6px] hover:bg-[#FF9149] transition-all duration-300"
             >
               <FontAwesomeIcon
