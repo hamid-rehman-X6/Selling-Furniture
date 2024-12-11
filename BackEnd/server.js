@@ -15,13 +15,17 @@ app.use(cookieParser());
 app.use(
     cors({
         origin: "http://localhost:5173",
-        methods: ["GET", "POST", "PUT", "DELETE"],
+        methods: ["GET", "POST"],
         credentials: true,
     })
 );
 
 // use the user router here
-app.use('/auth/users', userRoutes);
+app.use(userRoutes);
+
+app.get("/", (req,res) => {
+    res.json("Hello World")
+});
 
 app.use(handleError);
 
